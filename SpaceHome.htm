@@ -1,27 +1,103 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chat Space</title>
         <style>
             body{
                 margin:0;
                 padding:0;
                 width:100%;
+                background-color: black;
             }
             header{
-                background-color:blue;
-                color:white;
+                background-color:#00EEFF;
                 padding:10px;
                 height:100px;
+                cursor: pointer;
             }
             header h1{
                 margin:0px;
+                font-family: 'Audiowide', cursive;
             }
             .Title{
                 height:75px;
+                font-size:25px;
+                text-align:center;
             }
             .navbar{
                 height:25px;
+                font-size: 20px;
+                font-family: 'Audiowide', cursive;
+                text-align: center;
+            }
+            header a{
+                margin:5px;
+                padding:5px;
+            }
+            header a:hover{
+                color:#00727A;
+            }
+
+            /*This is the styling for the sidebar*/
+            .sidebar{
+                width:150px;
+                height:100%;
+                background-color:white;
+                font-family: 'Audiowide', cursive;
+                position:fixed;
+            }
+            .sidebar a{
+                display:block;
+                text-decoration: none;
+                color:black;
+                text-align:center;
+                padding:10px;
+            }
+            .sidebar a:hover{
+                background-color:darkgrey;
+                color:white;
+            }
+            /*This is the styling for the space links*/
+            .space{
+                width:125px;
+                height:150px;
+                padding:10px;
+                margin:20px;
+                background-color:#00FF7B;
+                border-radius: 10px;
+                text-align: center;
+            }
+
+            #SDisplay{
+                display: flex;
+                justify-content: space-around;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+            }
+            
+            .imgSpace{
+                width:125px;
+                height:125px;
+                border-radius: 10px;
+            }
+            .space p{
+                width:130px;
+                float: right;
+            }
+            .space h3{
+                text-align: center;
+                margin: 0px;
+            }
+            .ASpace{
+                margin:0;
+                padding:0;
+                color:black;
+                text-decoration: none;
+            }
+            .showCase{
+                margin-left: 150px;
             }
         </style>
         <script>
@@ -31,7 +107,20 @@
     <body>
         <header>
             <div class="Title"><h1>Chat Space</h1></div>
-            <div class="navbar"><a>Contacts</a></div>
+            <div class="navbar"><a>Contacts</a><a>Settings</a></div>
         </header>
+        <div class="sidebar">
+            <a href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+        <div class="showCase">
+            <a class="ASpace" href="#">
+                <div class="space">
+                    <img src="https://jacinth.boggess.net/Pictures/Ballet1.png" class="imgSpace"><h3>The 4 Kids</h3>
+                </div>
+            </a>
+        </div>
     </body>
 </html>
