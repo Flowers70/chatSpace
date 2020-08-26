@@ -1,159 +1,131 @@
-<!DOCTYPE html>
+!(DOCTYPE html)
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-  <style>
-    body.t1{
-      margin:0;
-      padding:0;
-      background-color:black;
-      color:white;               
-    }
-    body.t2{
-      margin:0;
-      padding:0;
-      background-color:white;
-      color:black;
-    }
-    header.t1{
-      background-color:#00EEFF;
-      padding:10px;
-      height:100px;
-      cursor: pointer;
-      margin-bottom: 10px;
-      color:black;
-    }
-    header.t2{
-      background-color:#00EEFF;
-      padding:10px;
-      height:100px;
-      cursor: pointer;
-      margin-bottom: 10px;
-      color:black;
-    }
-    header h1{
-      margin:0px;
-      font-family: 'Audiowide', cursive;
-    }
-    .Title{
-      height:75px;
-      font-size:25px;
-      text-align:center;
-    }
-    .navbar{
-      height:25px;
-      font-size: 20px;
-      font-family: 'Audiowide', cursive;
-      text-align: center;
-    }
-    header a{
-      margin:5px;
-      padding:5px;
-    }
-    header a:hover.t1{
-      color:#00727A;
-    }
-    header a:hover.t2{
-      color:white;
-    }
-    .switch {
-      position: relative;
-      display: inline-block;
-      width: 60px;
-      height: 34px;
-    }
+    <style>
+      body{
+                margin:0;
+                padding:0;
+                width:100%;
+                background-color: black;
+            }
+            header{
+                background-color:#00EEFF;
+                padding:10px;
+                height:100px;
+                cursor: pointer;
+                margin-bottom: 10px;
+            }
+            header h1{
+                margin:0px;
+                font-family: 'Audiowide', cursive;
+            }
+            .Title{
+                height:75px;
+                font-size:25px;
+                text-align:center;
+            }
+            .navbar{
+                height:25px;
+                font-size: 20px;
+                font-family: 'Audiowide', cursive;
+                text-align: center;
+            }
+            header a{
+                margin:5px;
+                padding:5px;
+            }
+            header a:hover{
+                color:#00727A;
+            }
+  
+  .switch {
+   margin: middle;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
 
-    .switch input { 
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 
-    .slider {
-      position: absolute;
-      cursor: pointer;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #ccc;
-      -webkit-transition: .4s;
-      transition: .4s;
-    }
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
 
-    .slider:before {
-      position: absolute;
-      content: "";
-      height: 26px;
-      width: 26px;
-      left: 4px;
-      bottom: 4px;
-      background-color: white;
-      -webkit-transition: .4s;
-      transition: .4s;
-    }
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
 
-    input:checked + .slider {
-      background-color: #00eeff;
-    }
+input:checked + .slider {
+  background-color: #00eeff;
+}
 
-    input:focus + .slider {
-      box-shadow: 0 0 1px #00eeff;
-    }
+input:focus + .slider {
+  box-shadow: 0 0 1px #00eeff;
+}
 
-    input:checked + .slider:before {
-      -webkit-transform: translateX(26px);
-      -ms-transform: translateX(26px);
-      transform: translateX(26px);
-    }
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
 
-    /* Rounded sliders */
-    .slider.round {
-      border-radius: 34px;
-    }
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
 
-    .slider.round:before {
-      border-radius: 50%;
-    }
+.slider.round:before {
+  border-radius: 50%;
+}
 </style>
 <script>
-//Create a variable called "Theme" set it equal to "t1" (do this on line 122)
-
-//This is a function called "Changes"
-//This function needs to tell whether the switch is checked or not
-//First create a new variable inside the function called "newTheme" set it equal to "t2"
-
-//Second you need to know whether the switch is checked or not using an if than
-//If you need help you can go to: https://www.w3schools.com/jsref/prop_checkbox_checked.asp
-//The switch's id is "switch"
-//If the switch is checked set newTheme to "t2"
-//If the switch is not checked set newTheme to "t1"
-
-//Third you need to create a for loop: https://www.w3schools.com/js/js_loop_for.asp
-//Inside of the parenthesis needs to look like this: (i=1; i < 5; i++)
-
-//Fourth inside the for loop you need to create a new variable called "elements"
-//The variable "elements" needs to be equal to: document.getElementById("e" + i)
-
-//On the next line you need to place: elements.classList.add(newTheme)
-//On the next line you need to place: elements.classList.reomve(Theme)
-
-//Fith outside of the for loop do this line of code: Theme = newTheme;
-function Changes(){
-  
-}
+  document.getElementById("myText").value = "Johnny Bravo";
 </script>
 </head>
-<body class="t1" id="e1">
-<header class="t1" id="e2">
+<body>
+<header>
             <div class="Title"><h1>Chat Space</h1></div>
-            <div class="navbar"><a class="t1" id="e3">Contacts</a><a class="t1" id="e4">Settings</a></div>
+            <div class="navbar"><a>Contacts</a><a>Settings</a></div>
         </header>
-Light Mode:
+
 <label class="switch">
-  <input type="checkbox" id="switch" onchange="Changes()">
+  <input type="checkbox" checked>
   <span class="slider round"></span>
-</label><br>
+</label>
+<script>(
+  <Function>
+  <Var>Theme=t1</Var>
+    <Var>newTheme=t2</Var>
+  </Function>
+  Switchs Id="switch"
+  If Then= If the switch is checked set newTheme to "t2"
+  If Then= If the switch is not checked set newTheme to "t1"
+  (var i;
+  for(i=1; i < 5; i++)<Var>elements=document.getElementById("e" + i)
+    elements.classList.add(newTheme)
+    elements.classList.reomve(Theme)
+  </Var>)
+  )function Changes(){</script>
 </body>
 </html> 
