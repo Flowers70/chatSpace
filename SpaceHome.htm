@@ -14,7 +14,7 @@
             header{
                 background-color:#00EEFF;
                 padding:10px;
-                height:100px;
+                min-height:100px;
                 cursor: pointer;
             }
             header h1{
@@ -22,12 +22,12 @@
                 font-family: 'Audiowide', cursive;
             }
             .Title{
-                height:75px;
+                min-height:75px;
                 font-size:25px;
                 text-align:center;
             }
             .navbar{
-                height:25px;
+                min-height:25px;
                 font-size: 20px;
                 font-family: 'Audiowide', cursive;
                 text-align: center;
@@ -59,6 +59,26 @@
                 background-color:darkgrey;
                 color:white;
             }
+            @media only screen and (max-width: 700px){
+                .sidebar{
+                    width:100%;
+                    height:50px;
+                }
+                .sidebar a{
+                    display:inline-block;
+                }
+                .showCase{
+                    margin-top:60px;
+                }
+            }
+            @media only screen and (max-width: 300px){
+                .sidebar{
+                    height:100px;
+                }
+                .showCase{
+                    margin-top: 110px;
+                }
+            }
             /*This is the styling for the space links*/
             .space{
                 width:125px;
@@ -69,14 +89,11 @@
                 border-radius: 10px;
                 text-align: center;
             }
-
-            #SDisplay{
-                display: flex;
-                justify-content: space-around;
-                justify-content: flex-start;
-                flex-wrap: wrap;
+            @media only screen and (max-width: 700px){
+                .space{
+                    margin:10px;
+                }
             }
-            
             .imgSpace{
                 width:125px;
                 height:125px;
@@ -96,13 +113,13 @@
                 color:black;
                 text-decoration: none;
             }
-            .showCase{
+            @media only screen and (min-width: 700px){
+                .showCase{
                 margin-left: 150px;
             }
+            }
+            
         </style>
-        <script>
-
-        </script>
     </head>
     <body>
         <header>
@@ -123,4 +140,5 @@
             </a>
         </div>
     </body>
+</html>
 </html>
